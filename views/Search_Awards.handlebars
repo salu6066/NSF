@@ -1,0 +1,23 @@
+<h3>Award Selection<h3>
+<table border = "2px solid pink" style=" margin: 2 auto;"  >
+    <tr> <td> Award Name</td> <td> Click </td></tr>
+    
+    {{#each Award_list}}
+        <tr>        
+            <td>{{Award_name}}</td>
+            </td>  
+            <td>
+
+    <form 
+          action="http://localhost:3000/Award_Detail"  method="get">   
+
+
+   <input type ="select" value="Search"/>
+   <input type="submit" value="Search" >
+   <input type="hidden" value="{{Award_Id}}" name="id">
+    </form>
+             
+        </tr>
+    {{/each}}
+</table>
+

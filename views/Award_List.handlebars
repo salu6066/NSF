@@ -1,0 +1,11 @@
+<h3>Current Awards<h3>
+<table border = "2px solid pink" style=" margin: 2 auto;"  >
+    <tr><td>S. No</td><td>Award Name</td></tr>
+    
+    {{#each Award_List}}
+        <tr>
+            <td>{{Award_Id}}</td>            
+            <td>{{Award_name}}</td>
+        </tr>
+    {{/each}}
+</table>
